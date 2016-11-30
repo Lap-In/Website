@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lap-Input</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/style.css">
+
+	<script type="text/javascript">
+		function readTextFile(filepath) {
+			var str = "";
+			var txtFile = new File(filepath);
+			txtFile.open("r");
+			while (!txtFile.eof) {
+				// read each line of text
+				str += txtFile.readln() + "\n";
+			}
+			return str;
+		}
+
+		var menu_call = false;
+
+		$(document).ready(function() {
+			$(".awe_collapse").hide();
+
+			$("#awe_nav_menu").click(function() {
+				if (menu_call) {
+					$(".awe_collapse").hide();
+					menu_call = false;
+				} else {
+					$(".awe_collapse").show();
+					menu_call = true;
+				}
+			});
+
+			var txt = readTextFile("api/model.json");
+
+			//var json = JSON.parse(txt);
+
+			console.log(txt);
+			//console.log(json);
+		});
+	</script>
+<body>
+<!-- Navigation Bar -->
+<nav class="awe_nav">
+	<!-- Header -->
+	<ul class="awe_list">
+		<li class="awe_list_e" id="awe_nav_menu" style="width: 10%;">
+			<a class="awe_list_link">///</a>
+		</li>
+		<li class="awe_list_e" style="width: 80%;">
+			<a class="awe_list_link">Lapin</a>
+		</li>
+	</ul>
+	<!-- Collapse Menu -->
+	<ul class="awe_collapse">
+		<li class="awe_list_e">
+			<a class="awe_list_link">CV</a>
+		</li>
+		<li class="awe_list_e">
+			<a class="awe_list_link">Arcade</a>
+		</li>
+		<li class="awe_list_e">
+			<a class="awe_list_link">Whatever</a>
+		</li>
+		<li class="awe_list_e">
+			<a class="awe_list_link">^</a>
+		</li>
+	</ul>
+</nav>
+<!-- Content -->
+<div class="awe_content">
+	<div class="awe_content_body">
+		<p>a</p>
+		<div class="TMP_Content"></div>
+	</div>
+</div>
+<!-- Footer -->
+<!-- For each element, in a tablet screen, touch one extand the content,
+	 touch elsewhere disextand it -->
+<footer class="awe_footer">
+	<ul class="awe_list">
+		<li class="awe_list_e" id="mail_link">
+			<a class="awe_list_link">Mail</a>
+		</li>
+		<li class="awe_list_e" id="twitter_link">
+			<a class="awe_list_link">Twitter</a>
+		</li>
+		<li class="awe_list_e" id="git_link">
+			<a class="awe_list_link">GitHib</a>
+		</li>
+	</ul>
+</footer>
+</body>
+</html>

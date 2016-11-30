@@ -1,0 +1,238 @@
+{
+	"general": {
+		"firstname": "POULAIN",
+		"lastname": "Kevin",
+		"age": 21,
+		"drivingLicence": {
+			"hasDrivingLicence": true,
+			"desc": "Permis B",
+			"hasPersonalCar": true
+		},
+		"phone": 0770947604,
+		"mail": "poulain.kevin.62@gmail.com",
+		"web": "http://lapin.toile-libre.org",
+		"git": "https://github.com/Lap-In"
+	},
+
+	"experience": {
+		"0": {
+			"name": "Stage << We Are Linked >>",
+			"at": {
+				"name": "We Are Linked",
+				"location": "Bondues"
+			},
+			"date": {
+				"start": "Avril 2016",
+				"end": "Juin 2016"
+			},
+			"objectif": "Developpement RSE",
+			"desc": "Developpement d'un nouveau systeme de messagerie personnel pour un RSE (Reseau Social d'Entreprise).",
+			"techno": {
+				"0": "C#",
+				"1": "MySQL",
+				"2": "PHP",
+				"3": "JavaScript",
+				"4": "JQuerry",
+				"5": "Smarty [Template engine For PHP]"
+			}
+		},
+		"1": {
+			"name": "24h des IUTs",
+			"at": {
+				"name": "Universite du Havre",
+				"location": "Havre"
+			},
+			"date": {
+				"start": "Mai 2015",
+				"end": "Mai 2015"
+			},
+			"objectif": "Concours de Developpement",
+			"desc": "Developpement d'application Web, Reseau et Securite.",
+			"techno": {
+				"0": "Java",
+				"1": "PHP",
+				"2": "JavaScript"
+			}
+		},
+		"2": {
+			"name": "Word Invaders",
+			"at": {
+				"name": "IUT A Lille 1",
+				"location": "Villeneuve d'Ascq"
+			},
+			"date": {
+				"start": "Septembre 2014",
+				"end": "Janvier 2014"
+			},
+			"objectif": "Developpement Jeu Éducatif",
+			"desc": "Premier projet en groupe.",
+			"techno": {
+				"0": "Java"
+			}
+		}
+	},
+
+	"competence": {
+		"info": {
+			"system": {
+				"name": "Systeme",
+				"0": "Windows XP",
+				"1": "Windows 7",
+				"2": "Windows 8",
+				"3": "Linux Debian",
+				"4": "Linux Ubuntu",
+				"5": "Linux ArchLinux"			
+			},
+			"programming": {
+				"name": "Languages de programmation",
+				"0": "Java",
+				"1": "C",
+				"2": "C++",
+				"3": "C#"
+			},
+			"web": {
+				"name": "Techno Web",
+				"0": "HTML",
+				"1": "CSS",
+				"2": "JavaScript",
+				"3": "PHP",
+				"4": "JQuerry"
+			},
+			"database": {
+				"name": "Base de donnees",
+				"0": "MySQL",
+				"1": "PSQL",
+				"2": "Microsoft Access"
+			},
+			"officeSoftware": {
+				"name": "Bureautique",
+				"0": "Microsoft Office",
+				"1": "Open Office",
+				"2": "Libre Office"
+			},
+			"3d": {
+				"name": "3D",
+				"0": "Blender",
+				"1": "Unity",
+				"2": "Source FilmMaker"
+			},
+			"tools": {
+				"name": "Outil",
+				"0": "Git",
+				"1": "Ecplise",
+				"2": "NetBeams",
+				"3": "Code::Blocks",
+				"4": "Visual Studio",
+				"5": "IntelliJ IDEA",
+				"6": "CLion",
+				"7": "Sublime Text",
+				"8": "Android Studio",
+				"9": "Vim"
+			}
+		},
+		"other": {
+			"language": {
+				"0": {
+					"name": "Anglais",
+					"universityLevel": "B2",
+					"readingSkill": "Tres bon",
+					"writingSkill": "Bon",
+					"talkingSkill": "Bon"
+				},
+				"1": {
+					"name": "Allemand",
+					"universityLevel": "A1",
+					"readingSkill": "Basique",
+					"writingSkill": "Basique",
+					"talkingSkill": "Basique"
+				}
+			}
+		}
+	},
+
+	"career": {
+		"0": {
+			"name": "Licence Info",
+			"at": {
+				"name": "Universite de Lille 1",
+				"location": "Villeneuve d'Ascq"
+			},
+			"date": {
+				"start": "Septembre 2016",
+				"end": "-"
+			},
+			"techno": {
+				"0": "Java",
+				"1": "C",
+				"2": "PSQL"
+			}
+		},
+		"1": {
+			"name": "DUT Info",
+			"at": {
+				"name": "IUT A Lille 1",
+				"location": "Villeneuve d'Ascq"
+			},
+			"date": {
+				"start": "Septembre 2014",
+				"end": "Juin 2016"
+			},
+			"techno": {
+				"0": "Java",
+				"1": "C",
+				"2": "MySQL",
+				"3": "Cobol",
+				"4": "C#",
+				"5": "Android Studio"
+			}
+		},
+		"2": {
+			"name": "Baccalaureat Scientifique SVT Option ISN",
+			"at": {
+				"name": "Lycee Robespierre",
+				"location": "Arras"
+			},
+			"date": {
+				"start": "Septembre 2010",
+				"end": "Juin 2014"
+			}
+		}
+	},
+
+	"hobies": {
+		"0": {
+			"name": "Dessin"
+		},
+		"1": {
+			"name": "Cinema d'Animation",
+			"item": {
+				"0": "Disney",
+				"1": "Pixar",
+				"2": "Ghibli",
+				"3": "Trigger",
+				"4": "Ankama"
+			}
+		},
+		"2": {
+			"name": "Jeu Video",
+			"item": {
+				"0": {
+					"name": "Banjo-Kazooie",
+					"genre": "Platformer 3D"
+				},
+				"1": {
+					"name": "Zelda",
+					"genre": "Aventure"
+				},
+				"2": {
+					"name": "Disgaea",
+					"genre": "Tactical-RPG"
+				},
+				"3": {
+					"name": "Wing Commander",
+					"genre": "Simulation Spatiale"
+				},
+			}
+		},
+	}
+}
