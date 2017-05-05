@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Perso</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/afe93a1d6c.js"></script>
+
+	<style type="text/css">
+		body {
+			font-family: 'Share Tech Mono', monospace;
+		}
+
+		section {
+			min-height: 100vh;
+			width: 100%;
+			padding: 2%;
+			border: 1px solid black;
+		}
+
+		.lang-select {
+			float: right;
+			width: 7%;
+		}
+
+		.navbar-new {
+			position: fixed;
+			border: 1px solid black;
+			float: left;
+			min-height: 100vh;
+			padding: 0%;
+		}
+
+		.navbar-backcolor {
+			background-color: #252525;
+		}
+
+		.navlink {
+			color: #44AAFF;
+    		border: none;
+    		text-shadow: 0px 0px 10px rgba(51, 153, 255, 0.5);
+    		background-color: white
+		}
+
+		.navlink-border {
+			margin-bottom: 2px;
+			width: 100%;
+			padding: 10px;
+		}
+
+		.navlink-backcolor {
+			background-color: #252525;
+		}
+
+		.cover-body {
+			margin: auto;
+			padding-top: 14%;
+		}
+
+		@media only screen and (max-width: 768px) {
+			.collapse {
+				min-width: 100vh;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- Vertical Navigation Bar -->
+	<nav class="navbar-new text-center"> 
+		<div class="navlink-border">
+			<button type="button" class="btn navlink" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+				<span class="fa fa-bars fa-2x"></span>
+			</button>
+		</div>
+		<div class="collapse" id="navbar-collapse">
+			<ul class="list-unstyled">
+				<li class="nav-ink-border">
+					<a href="#cover" class="navlink"><span class="glyphicon glyphicon-home fa-2x" /></a>
+				</li>
+				<li class="navlink-border">
+					<a href="#skills" class="navlink"><span class="fa fa-tasks fa-2x" /></a>
+				</li>
+				<li class="navlink-border">
+					<a href="#career" class="navlink"><span class="glyphicon glyphicon-briefcase fa-2x" alt="Career"/></a>
+				</li>
+				<li class="navlink-border">
+					<a href="#contact" class="navlink"><span class="glyphicon glyphicon-envelope fa-2x" /></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Cover -->
+	<section id="cover" class="container-fluid">
+		<select class="form-control lang-select">
+			<option>English</option>
+			<option>French</option>
+		</select>
+		<div class="cover-body row">
+			<div class="col-sm-1"></div>
+			<article class="col-sm-6">
+				<h2>POULAIN Kévin</h2>
+				<h4>Aspiring Developper</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+			</article>
+			<aside class="text-center">
+				<img src="img/photos.jpg">
+			</aside>
+		</div>
+	</section>
+	
+	<!-- Skills & Project -->
+	<section id="skills">
+		<div class="test"></div>
+	</section>
+
+	<!-- Career -->
+	<section id="career">
+		<div class="test"></div>
+	</section>
+
+	<!-- Contact -->
+	<section id="contact">
+		<div class="test"></div>
+	</section>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$('#navbar-collapse').on('shown.bs.collapse', function () {
+		$('.navbar-new').addClass('navbar-backcolor');
+		$('.navlink').addClass('navlink-backcolor');
+	}).on('hidden.bs.collapse', function () {
+		$('.navbar-new').removeClass('navbar-backcolor');
+		$('.navlink').removeClass('navlink-backcolor');
+	});
+</script>
+
+</body>
+</html>
