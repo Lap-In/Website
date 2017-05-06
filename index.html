@@ -18,9 +18,7 @@
 	<style type="text/css">
 		body {
 			font-family: 'Share Tech Mono', monospace;
-			background-color: #151515;
-			color: #BCBCBC;
-			text-shadow: 0px 0px 10px rgba(152, 152, 152, 0.5);
+			background-image: url("img/square.png");
 		}
 
 		section {
@@ -28,6 +26,11 @@
 			width: 100%;
 			padding: 2%;
 			overflow: hidden;
+		}
+		
+		img {
+			border: 2px solid #44AAFF;
+			-webkit-box-shadow: 0px 0px 10px rgba(51, 153, 255, 0.5);
 		}
 
 		.lang-select {
@@ -45,13 +48,14 @@
 
 		.navbar-backcolor {
 			background-color: #252525;
+			-webkit-box-shadow: 0px 0px 10px rgba(27, 27, 27, 0.5);
 		}
 
 		.navlink {
 			color: #44AAFF;
     		border: none;
     		text-shadow: 0px 0px 10px rgba(51, 153, 255, 0.5);
-    		background-color: white
+    		background-color: transparent;
 		}
 
 		.navlink-border {
@@ -67,21 +71,28 @@
 		.cover-body {
 			margin: auto;
 			padding-top: 14%;
+			color: #BCBCBC;
+			text-shadow: 0px 0px 10px rgba(152, 152, 152, 0.5);
 		}
 
 		.separator {
 			width: 100%;
 			height: 0px;
 			border: 1px solid #59FF36;
-			box-shadow: 0px 0px 10px rgba(50, 255, 7, 0.5);
+			-webkit-box-shadow: 0px 0px 10px rgba(50, 255, 7, 0.5);
 		}
 
-		.leftside {
-
+		.panel {
+			padding: 2%;
 		}
 
-		.rightside {
+		.circle-active {
+			color: #44AAFF;
+			text-shadow: 0px 0px 10px rgba(51, 153, 255, 0.5);
+		}
 
+		.tab {
+			padding-left: 1em;
 		}
 
 		@media(min-width:992px) {
@@ -103,7 +114,7 @@
 		</div>
 		<div class="collapse" id="navbar-collapse">
 			<ul class="list-unstyled">
-				<li class="nav-ink-border">
+				<li class="navlink-border">
 					<a href="#cover" class="navlink"><span class="glyphicon glyphicon-home fa-2x" /></a>
 				</li>
 				<li class="navlink-border">
@@ -149,9 +160,175 @@
 	<div class="separator"></div>
 	
 	<!-- Skills & Project -->
-	<section id="skills" class="container-fluid">
-		<div class="leftside">a</div>
-		<div class="rightside">a</div>
+	<section id="skills" class="container-fluid row">
+		<div class="panel col-xs-offset-1 col-sm-5">
+			<div><b>[</b>Skills<b>]</b></div>
+			<ul class="list-unstyled">
+				<li class="tab">
+					<div><b>[</b>Programmation Language<b>]</b></div>
+					<ul class="list-unstyled">
+						<li>
+							<div class="col-xs-5">C</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">C++</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">C#</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">Java</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">Haskell</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">MySQL++</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">PHP</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li  class="tab">
+					<div><b>[</b>Tools<b>]</b></div>
+					<ul class="list-unstyled">
+						<li>
+							<div class="col-xs-5">Window 7-10</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">Debian</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">ArchLinux</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">Blender</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">Unity</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">Visual Studio</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">Vim</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+						<li>
+							<div class="col-xs-5">Git</div>
+							<div>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle circle-active"></span>
+								<span class="fa fa-circle"></span>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="panel col-xs-offset-1 col-sm-5">
+			a
+		</div>
 	</section>
 
 	<div class="separator"></div>
